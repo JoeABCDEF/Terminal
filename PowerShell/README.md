@@ -57,3 +57,14 @@ echo $profile
 Remove-Item Alias:[Name]
 ```
 
+如果你想为自己的 Windows PowerShell 设置永久的命令别名 (Alias)，可以遵循以下步骤：
+
+- 打开 PowerShell ，运行 `echo $profile`，会输出一个文件路径。创建这个文件。
+- 打开刚创建的文件，按以下格式设置多条别名：
+
+```powershell
+ function 别名 { 需要替代的命令，可以包含空格 }
+```
+
+- 以管理员身份打开 PowerShell，执行 `Set-ExecutionPolicy RemoteSigned`。
+- 重新启动 PowerShell ，应该已经完成了。
