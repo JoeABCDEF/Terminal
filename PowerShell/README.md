@@ -68,3 +68,5 @@ Remove-Item Alias:[Name]
 
 - 以管理员身份打开 PowerShell，执行 `Set-ExecutionPolicy RemoteSigned`。
 - 重新启动 PowerShell ，应该已经完成了。
+- ![image](https://user-images.githubusercontent.com/39638510/120252692-dbf4f680-c2b7-11eb-95b9-b33156facd15.png)
+
